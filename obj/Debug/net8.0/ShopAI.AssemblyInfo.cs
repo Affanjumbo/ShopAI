@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ShopAI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+60e1e11d4522434989df5e5cd57690108f6044eb")]
 [assembly: System.Reflection.AssemblyProductAttribute("ShopAI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ShopAI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
