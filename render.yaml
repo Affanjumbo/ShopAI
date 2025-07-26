@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: shopai-api
+    runtime: dotnet
+    repo: https://github.com/Affanjumbo/ShopAI
+    branch: main
+    buildCommand: dotnet build ShopAI/ShopAI.csproj -c Release
+    startCommand: dotnet ShopAI/bin/Release/net8.0/ShopAI.dll
+    autoDeploy: true
