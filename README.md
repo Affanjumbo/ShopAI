@@ -110,7 +110,7 @@ ShopAI aims to modernize the e-commerce experience using artificial intelligence
 ## Contributors
 
 - **Affan Ahmed** – Full-Stack Developer, AI Integration, System Architecture  
-- **Aima Khan** – Front-End Web Development
+- **Aima Khan** – Front-End Web Development, App Developer
 
 ## License
 
