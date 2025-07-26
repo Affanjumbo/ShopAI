@@ -74,7 +74,7 @@ ShopAI aims to modernize the e-commerce experience using artificial intelligence
 
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/shopai.git
+   git clone https://github.com/AffanJumbo/shopai.git
    ```
 
 2. **ASP.NET Setup**
@@ -92,6 +92,11 @@ ShopAI aims to modernize the e-commerce experience using artificial intelligence
      ```bash
      uvicorn model_service.py --reload
      ```
+
+<img width="975" height="773" alt="image" src="https://github.com/user-attachments/assets/83cfb16e-14f7-4b20-b1e2-bb95ff8f7534" />
+
+<img width="758" height="403" alt="image" src="https://github.com/user-attachments/assets/c061be4b-132f-4096-b19c-689d9601af2f" />
+
 
 4. **Frontend**
    - Frontend is served via the ASP.NET project.
