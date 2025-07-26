@@ -1,0 +1,109 @@
+import pandas as pd
+import matplotlib.pyplot as plt
+from sqlalchemy import create_engine
+
+# Database connection
+engine = create_engine(
+    'mssql+pyodbc://localhost\\SQLEXPRESS/ShopAI?trusted_connection=yes&trustservercertificate=yes&driver=ODBC+Driver+17+for+SQL+Server'
+)
+
+def plot_purchase_frequency():
+    try:
+        # Fetch purchase frequency data
+        query = """
+        SELECT 
+            p.Name AS ProductName, 
+            COUNT(oi.ProductId) AS PurchaseCount
+        FROM OrderItems oi
+        INNER JOIN Products p ON oi.ProductId = p.Id
+        GROUP BY p.Name
+        ORDER BY PurchaseCount DESC
+        """
+        data = pd.read_sql(query, engine)
+
+        # Plot purchase frequency
+        plt.figure(figsize=(10, 6))
+        plt.bar(data['ProductName'], data['PurchaseCount'], color='skyblue')
+        plt.title("Product Purchase Frequency", fontsize=16)
+        plt.xlabel("Product Name", fontsize=12)
+        plt.ylabel("Purchase Count", fontsize=12)
+        plt.xticks(rotation=45, ha='right', fontsize=10)
+        plt.tight_layout()
+
+        # Save the plot
+        plt.savefig("purchase_frequency.png")
+        print("Purchase frequency graph saved as 'purchase_frequency.png'.")
+
+    except Exception as e:
+        print(f"Error generating purchase frequency graph: {e}")
+
+
+def plot_cooccurrence_strength():
+    try:
+        # Fetch co-occurrence data
+        query = """
+        SELECT oi1.ProductId AS ProductA, oi2.ProductId AS ProductB, COUNT(*) AS Frequency
+        FROM OrderItems oi1
+        INNER JOIN OrderItems oi2 ON oi1.OrderId = oi2.OrderId AND oi1.ProductId != oi2.ProductId
+        GROUP BY oi1.ProductId, oi2.ProductId
+        ORDER BY Frequency DESC
+        """
+        data = pd.read_sql(query, engine)
+
+        # Top 10 co-occurrences
+        top_cooccurrence = data.head(10)
+
+        # Plot co-occurrence strength
+        plt.figure(figsize=(10, 6))
+        plt.barh(
+            [f"{row['ProductA']} & {row['ProductB']}" for _, row in top_cooccurrence.iterrows()],
+            top_cooccurrence['Frequency'],
+            color='limegreen'
+        )
+        plt.title("Top Product Co-occurrences", fontsize=16)
+        plt.xlabel("Frequency", fontsize=12)
+        plt.ylabel("Product Pairs", fontsize=12)
+        plt.tight_layout()
+
+        # Save the plot
+        plt.savefig("cooccurrence_strength.png")
+        print("Co-occurrence strength graph saved as 'cooccurrence_strength.png'.")
+
+    except Exception as e:
+        print(f"Error generating co-occurrence strength graph: {e}")
+
+
+def plot_category_trends():
+    try:
+        # Fetch category trends
+        query = """
+        SELECT 
+            c.Name AS CategoryName, 
+            COUNT(oi.ProductId) AS PurchaseCount
+        FROM OrderItems oi
+        INNER JOIN Products p ON oi.ProductId = p.Id
+        INNER JOIN Categories c ON p.CategoryId = c.Id
+        GROUP BY c.Name
+        ORDER BY PurchaseCount DESC
+        """
+        data = pd.read_sql(query, engine)
+
+        # Plot category trends
+        plt.figure(figsize=(10, 6))
+        plt.pie(data['PurchaseCount'], labels=data['CategoryName'], autopct='%1.1f%%', startangle=140)
+        plt.title("Category Purchase Trends", fontsize=16)
+        plt.tight_layout()
+
+        # Save the plot
+        plt.savefig("category_trends.png")
+        print("Category trends graph saved as 'category_trends.png'.")
+
+    except Exception as e:
+        print(f"Error generating category trends graph: {e}")
+
+
+# Main function to generate all graphs
+if __name__ == "__main__":
+    plot_purchase_frequency()
+    plot_cooccurrence_strength()
+    plot_category_trends()

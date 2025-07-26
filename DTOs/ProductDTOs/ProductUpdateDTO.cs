@@ -1,0 +1,33 @@
+﻿using System.ComponentModel.DataAnnotations;
+namespace ShopAI.DTOs.ProductDTOs
+{
+    public class ProductUpdateDTO
+    {
+        [Required(ErrorMessage = "Product Id is required.")]
+        public int Id { get; set; }
+
+        [StringLength(100, MinimumLength = 3, ErrorMessage = "Product Name must be between 3 and 100 characters.")]
+        public string? Name { get; set; }
+
+        [MinLength(10, ErrorMessage = "Description must be at least 10 characters.")]
+        public string? Description { get; set; }
+
+        
+        public decimal Price { get; set; }
+
+        [Range(0, 1000, ErrorMessage = "Stock Quantity must be between 0 and 1000.")]
+        public int StockQuantity { get; set; }
+
+        public IFormFile? ProductImage { get; set; }
+
+        [Range(0, 100, ErrorMessage = "Discount Percentage must be between 0% and 100%.")]
+        public int DiscountPercentage { get; set; }
+
+        public int SellerId { get; set; }
+
+        public int CategoryId { get; set; }
+
+        public int? SubCategoryId { get; set; } // nullable, only required for category 16
+
+    }
+}

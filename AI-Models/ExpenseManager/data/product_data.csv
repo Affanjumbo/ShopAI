@@ -1,0 +1,89 @@
+ProductId,ProductName,Price,SubCategoryName
+101,Gala Apples (Pack of 5),700.0,Fruits
+102,Yellow Bananas (Bunch of 6),400.0,Fruits
+103,Kinnow Oranges (Bag of 7),650.0,Fruits
+104,Round Red Tomatoes (1 kg),520.0,Vegetables
+105,Washed White Potatoes (2 kg Bag),600.0,Vegetables
+106,Fresh Orange Carrots (1 kg Bag),350.0,Vegetables
+107,Green Bell Peppers (Pack of 3),580.0,Vegetables
+108,Pasteurized Cow Milk (1 Liter),480.0,Dairy Products
+109,Processed Cheddar Slices (200g Pack),850.0,Dairy Products
+110,Strawberry Flavored Yogurt (500g Tub),570.0,Dairy Products
+111,Unsalted Farm Butter (200g Block),750.0,Dairy Products
+112,Fresh Cream (250ml Carton),680.0,Dairy Products
+113,Classic Potato Chips (Large Bag - Salted),380.0,Snacks
+114,Dark Chocolate Bar (80% Cocoa - 100g),620.0,Snacks
+115,Mixed Dry Fruits (250g Pouch),1050.0,Snacks
+116,Cream-Filled Biscuits (Family Pack),550.0,Snacks
+117,Spicy Corn Puffs (Large Bag),320.0,Snacks
+118,Peanuts (Roasted & Salted - 200g),800.0,Snacks
+119,Green Tea Bags (30 Count - Jasmine),700.0,Beverages
+120,Mango Juice (1 Liter Carton),780.0,Beverages
+121,Sparkling Water (Lime Flavored - 1 Liter Bottle),280.0,Beverages
+122,Pure Coconut Oil (500ml Jar),1350.0,Cooking Oils & Fats
+123,Blended Vegetable Oil (1 Liter Pouch),820.0,Cooking Oils & Fats
+124,Salted Dairy Butter (200g Block),780.0,Cooking Oils & Fats
+125,Pure Ghee (500g Jar),1850.0,Cooking Oils & Fats
+126,Super Basmati Rice (5 kg Bag),3200.0,Grains & Flour
+127,Whole Wheat Flour (1 kg Bag),500.0,Grains & Flour
+128,Quick Cooking Oats (1 kg Pack),920.0,Grains & Flour
+129,Corn Meal (500g Bag),480.0,Grains & Flour
+130,Spaghetti Pasta (500g Pack),450.0,Grains & Flour
+131,Ground Black Pepper (50g Jar),540.0,Spices & Seasonings
+132,Ground Coriander (100g Jar),460.0,Spices & Seasonings
+133,Garam Masala (50g Pouch),580.0,Spices & Seasonings
+134,Mustard Seeds (Brown - 100g),390.0,Spices & Seasonings
+135,Dried Red Chili Flakes (50g Jar),490.0,Spices & Seasonings
+136,Chicken Seasoning Mix (50g Sachet),500.0,Spices & Seasonings
+137,Brown Sugar (500g Bag),490.0,Sweeteners
+138,Natural Acacia Honey (350g Jar),1450.0,Sweeteners
+139,Corn Syrup (500ml Bottle),640.0,Sweeteners
+140,Whole Wheat Flakes Cereal (400g Box),800.0,Breakfast Foods
+141,Steel Cut Oats (500g Pack),670.0,Breakfast Foods
+142,Buttermilk Pancake Mix (750g Bag),720.0,Breakfast Foods
+143,Waffle Mix (500g Box),770.0,Breakfast Foods
+144,Frozen Mixed Vegetables (500g Pack),380.0,Frozen Foods
+145,Frozen Strawberries (300g Pack),450.0,Frozen Foods
+146,Frozen Chicken Nuggets (500g Pack),880.0,Frozen Foods
+147,Frozen Vegetable Biryani (Single Serve),550.0,Frozen Foods
+148,Canned Sweet Corn (400g Can),220.0,Canned Goods
+149,Canned Chickpeas (400g Can),250.0,Canned Goods
+150,Canned Tomato Paste (200g Can),180.0,Canned Goods
+151,Canned Chicken Soup (400g Can),320.0,Canned Goods
+152,Canned Pineapple Slices (500g Can),350.0,Canned Goods
+153,White Bread Loaf (Large),180.0,Bakery Products
+154,Chocolate Chip Cookies (Pack of 12),280.0,Bakery Products
+155,Plain Cake Slice,120.0,Bakery Products
+156,Whole Wheat Bread Loaf,220.0,Bakery Products
+157,Butter Croissants (Pack of 4),350.0,Bakery Products
+158,Fruit Cake (Small),450.0,Bakery Products
+159,Fresh Chicken Breast (500g),650.0,Meat & Seafood
+160,Frozen Beef Mince (500g Pack),780.0,Meat & Seafood
+161,Fresh Farm Eggs (Dozen),300.0,Meat & Seafood
+162,Instant Noodles (Chicken Flavor - Pack of 3),120.0,Noodles & Pasta
+163,Elbow Macaroni (500g Pack),200.0,Noodles & Pasta
+164,Fettuccine Pasta (500g Pack),230.0,Noodles & Pasta
+165,Rice Noodles (200g Pack),180.0,Noodles & Pasta
+166,Multivitamin Tablets (Bottle of 30),550.0,Health & Wellness
+167,Vitamin C Tablets (Bottle of 60),400.0,Health & Wellness
+168,Whey Protein Powder (500g Container - Vanilla),1800.0,Health & Wellness
+169,Organic Chia Seeds (200g Pack),600.0,Health & Wellness
+170,Energy Bar (Pack of 6),450.0,Health & Wellness
+171,Infant Formula (Stage 1 - 400g Tin),1200.0,Baby Food
+172,Pureed Apple Baby Food (120g Jar),150.0,Baby Food
+173,Baby Rice Cereal (200g Box),280.0,Baby Food
+174,Fruit Puree Pouches (Pack of 4),350.0,Baby Food
+175,Baby Biscuits (Pack),200.0,Baby Food
+176,Follow-Up Formula (Stage 2 - 400g Tin),1150.0,Baby Food
+177,Tomato Ketchup (500g Bottle),280.0,Condiments & Sauces
+178,Mayonnaise (400g Jar),320.0,Condiments & Sauces
+179,Soy Sauce (250ml Bottle),350.0,Condiments & Sauces
+180,Dishwashing Liquid (500ml Bottle),250.0,Household Cleaning Products
+181,Laundry Detergent Powder (1 kg Box),480.0,Household Cleaning Products
+182,All-Purpose Cleaner Spray (500ml Bottle),300.0,Household Cleaning Products
+183,Floor Cleaner (1 Liter Bottle),350.0,Household Cleaning Products
+184,Gentle Shampoo (200ml Bottle),320.0,Personal Care
+185,Nourishing Conditioner (200ml Bottle),350.0,Personal Care
+186,Body Soap Bar,120.0,Personal Care
+187,Fluoride Toothpaste (100g Tube),200.0,Personal Care
+188,Hand Sanitizer (50ml Bottle),150.0,Personal Care

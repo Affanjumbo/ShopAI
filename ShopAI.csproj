@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BCrypt.Net-Next" Version="4.0.3" />
+    <PackageReference Include="Keras.NET" Version="3.8.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="9.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="9.0.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="9.0.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+
+	  <PackageReference Include="Microsoft.Extensions.Logging" Version="9.0.3" />
+	  <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="9.0.3" />
+	  <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="9.0.3" />
+	  <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.9.0" />
+	  <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="8.0.15" />
+	  <PackageReference Include="Numpy.Bare" Version="3.11.1.33" />
+	  <PackageReference Include="System.Diagnostics.EventLog" Version="9.0.4" />
+	  <PackageReference Include="Microsoft.SqlServer.Server" Version="1.0.0" />
+	  <PackageReference Include="Microsoft.Data.SqlClient.SNI.runtime" Version="6.0.2" />
+	  <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
+	  <PackageReference Include="System.Memory" Version="4.6.3" />
+    
+  </ItemGroup> 
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\customerpp\" />
+    <Folder Include="wwwroot\images\sellerpp\" />
+  </ItemGroup>
+
+</Project>
